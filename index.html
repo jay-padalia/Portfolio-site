@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #F5EFE7;
+            font-family: "Poppins", sans-serif;
+        }
+        .navbar {
+            background-color: #213555;
+        }
+        .navbar a {
+            color: #F5EFE7 !important;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #213555, #3E5879);
+            color: #F5EFE7;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .profile-card {
+            background: #D8C4B6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            display: flex;
+            justify-content: space-around;
+            width: 50vw;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .card {
+            background: #D8C4B6;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background: #3E5879;
+            color: #F5EFE7;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ongoing">Ongoing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <div class="profile-card mx-auto">
+                <img src="jay.jpeg" alt="My Photo" class="square" width="150">
+                <div style=" margin-top:50px;  height:100px; width: 600px; color: black;">
+                    <h2 class="mt-3">Jay Padalia</h2>
+                    <p>Software Engineer | AI Enthusiast | Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5" style="width: 50vw;">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">I am a 3rd-year Software Engineering student with a passion for building scalable and efficient applications. My expertise spans Machine Learning, Artificial Intelligence, Next.js, React, MongoDB, Express, Node.js, and Java.</p>
+    </section>
+    <hr>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Weather Forecast System</h5>
+                    <p>A technology-driven solution designed to predict atmospheric conditions using AI algorithms.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Online Learning Management System</h5>
+                    <p>A platform to create, manage, and deliver educational courses over the internet.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Online Chat Application</h5>
+                    <p>A real-time communication platform for text, voice, and multimedia messaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Ongoing Projects Section -->
+    <section id="ongoing" class="container my-5">
+        <h2 class="text-center">Ongoing Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5>Expense Tracker App</h5>
+                    <p>A financial management tool that helps users track income, expenses, and savings.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5>Blog Website</h5>
+                    <p>A platform to publish, manage, and share articles on various topics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5 text-center">
+        <h2>Contact Me</h2>
+        <p>Email: jay.padalia03@gmail.com</p>
+        <p>Location: Gandhinagar, Gujarat</p>
+        <div class="social-icons">
+            <a href="mailto:jay.padalia03@gmail.com" class="btn btn-outline-dark me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg></a>
+            <a href="https://github.com/jay-padalia" class="btn btn-outline-dark me-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg></a>
+            <a href="https://in.linkedin.com/in/jay-ashwin-9ab7952ba" class="btn btn-outline-dark" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 My Portfolio | Made with ❤️</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
